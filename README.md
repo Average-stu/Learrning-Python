@@ -1,2 +1,2 @@
-# Learrning-Python
+# Learning-Python
 Just for learning Python 
