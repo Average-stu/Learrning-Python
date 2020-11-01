@@ -1,0 +1,20 @@
+import sys
+import subprocess
+import os
+import config
+
+IP_NETWORK  = config('IP_NETWORK')
+IP_DEVICE = config('IP_DEVICE')
+
+proc = subprocess.Popen(['ping', IP_NETWORK], stdout=subprocess.PIPE)
+
+while True:
+    line = proc.stdout.read;line()
+    if not line:
+        break
+    connected_ip = line.decord('utf-8').split()[3]
+
+    if connected_ip == IP_DEVICE:
+        subprocess.Popen(['say', 'MESSAGE'])    # message that you want to say
+
+        
