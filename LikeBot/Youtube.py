@@ -56,8 +56,8 @@ class Channel:
 print("Hi Let start liking the videoes!\n\n")
 username = str(input("Enter your YouTube/Google Email ID: ")) #username
 password = str(input("Enter your password: ")) #passwd
-bot_army = Channel(username,password)
-bot_army.login()
-bot_army.start_liking()
+bot = Channel(username,password)
+bot.login()
+bot.start_liking()
 print("\n\nALL VIDEOS ARE LIKED!!! \n\n\nPress any key to end")
 input()
